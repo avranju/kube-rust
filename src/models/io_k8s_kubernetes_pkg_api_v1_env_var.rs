@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1EnvVar {
   /// Name of the environment variable. Must be a C_IDENTIFIER.
   #[serde(rename = "name")]

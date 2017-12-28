@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ServiceStatus {
   /// LoadBalancer contains the current status of the load-balancer, if one is present.
   #[serde(rename = "loadBalancer")]

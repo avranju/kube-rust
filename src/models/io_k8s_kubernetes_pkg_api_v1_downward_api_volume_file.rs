@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1DownwardApiVolumeFile {
   /// Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
   #[serde(rename = "fieldRef")]

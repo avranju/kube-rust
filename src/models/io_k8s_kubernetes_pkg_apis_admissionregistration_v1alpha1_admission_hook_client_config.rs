@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AdmissionregistrationV1alpha1AdmissionHookClientConfig {
   /// CABundle is a PEM encoded CA bundle which will be used to validate webhook's server certificate. Required
   #[serde(rename = "caBundle")]

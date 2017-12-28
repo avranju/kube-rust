@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ContainerStateWaiting {
   /// Message regarding why the container is not yet running.
   #[serde(rename = "message")]

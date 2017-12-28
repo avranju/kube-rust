@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ContainerPort {
   /// Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
   #[serde(rename = "containerPort")]

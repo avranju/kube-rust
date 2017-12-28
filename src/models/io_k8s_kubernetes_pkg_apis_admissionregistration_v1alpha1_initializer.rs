@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AdmissionregistrationV1alpha1Initializer {
   /// FailurePolicy defines what happens if the responsible initializer controller fails to takes action. Allowed values are Ignore, or Fail. If \"Ignore\" is set, initializer is removed from the initializers list of an object if the timeout is reached; If \"Fail\" is set, admissionregistration returns timeout error if the timeout is reached.
   #[serde(rename = "failurePolicy")]

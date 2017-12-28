@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1Handler {
   /// One and only one of the following should be specified. Exec specifies the action to take.
   #[serde(rename = "exec")]

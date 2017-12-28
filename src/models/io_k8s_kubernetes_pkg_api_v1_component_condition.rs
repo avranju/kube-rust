@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ComponentCondition {
   /// Condition error code for a component. For example, a health check error code.
   #[serde(rename = "error")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ExtensionsV1beta1HttpIngressPath {
   /// Backend defines the referenced service endpoint to which the traffic will be forwarded to.
   #[serde(rename = "backend")]

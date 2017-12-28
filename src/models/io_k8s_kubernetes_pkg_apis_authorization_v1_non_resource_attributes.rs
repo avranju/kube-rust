@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AuthorizationV1NonResourceAttributes {
   /// Path is the URL path of the request
   #[serde(rename = "path")]

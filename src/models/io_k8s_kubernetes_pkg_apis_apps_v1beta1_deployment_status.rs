@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AppsV1beta1DeploymentStatus {
   /// Total number of available pods (ready for at least minReadySeconds) targeted by this deployment.
   #[serde(rename = "availableReplicas")]

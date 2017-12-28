@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1LoadBalancerStatus {
   /// Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
   #[serde(rename = "ingress")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AppsV1beta1RollingUpdateStatefulSetStrategy {
   /// Partition indicates the ordinal at which the StatefulSet should be partitioned.
   #[serde(rename = "partition")]

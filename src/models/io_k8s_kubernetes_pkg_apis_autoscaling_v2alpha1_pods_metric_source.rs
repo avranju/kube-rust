@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AutoscalingV2alpha1PodsMetricSource {
   /// metricName is the name of the metric in question
   #[serde(rename = "metricName")]

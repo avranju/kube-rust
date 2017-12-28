@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1SeLinuxOptions {
   /// Level is SELinux level label that applies to the container.
   #[serde(rename = "level")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ExtensionsV1beta1HostPortRange {
   /// max is the end of the range, inclusive.
   #[serde(rename = "max")]

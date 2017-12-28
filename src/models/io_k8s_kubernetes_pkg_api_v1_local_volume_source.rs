@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1LocalVolumeSource {
   /// The full path to the volume on the node For alpha, this path must be a directory Once block as a source is supported, then this path can point to a block device
   #[serde(rename = "path")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct SettingsV1alpha1PodPresetSpec {
   /// Env defines the collection of EnvVar to inject into containers.
   #[serde(rename = "env")]

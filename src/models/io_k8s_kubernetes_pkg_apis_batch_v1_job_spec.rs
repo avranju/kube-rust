@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct BatchV1JobSpec {
   /// Optional duration in seconds relative to the startTime that the job may be active before the system tries to terminate it; value must be positive integer
   #[serde(rename = "activeDeadlineSeconds")]

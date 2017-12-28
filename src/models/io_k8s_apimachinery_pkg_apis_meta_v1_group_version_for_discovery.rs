@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct MetaV1GroupVersionForDiscovery {
   /// groupVersion specifies the API group and version in the form \"group/version\"
   #[serde(rename = "groupVersion")]

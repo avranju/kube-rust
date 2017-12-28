@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1LocalObjectReference {
   /// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   #[serde(rename = "name")]

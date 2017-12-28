@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AuthorizationV1SubjectAccessReviewStatus {
   /// Allowed is required.  True if the action would be allowed, false otherwise.
   #[serde(rename = "allowed")]

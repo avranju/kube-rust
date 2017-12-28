@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ContainerStateTerminated {
   /// Container's ID in the format 'docker://<container_id>'
   #[serde(rename = "containerID")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct BatchV2alpha1CronJobStatus {
   /// A list of pointers to currently running jobs.
   #[serde(rename = "active")]

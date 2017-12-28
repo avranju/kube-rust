@@ -12,7 +12,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ExtensionsV1beta1RollbackConfig {
   /// The revision to rollback to. If set to 0, rollback to the last revision.
   #[serde(rename = "revision")]

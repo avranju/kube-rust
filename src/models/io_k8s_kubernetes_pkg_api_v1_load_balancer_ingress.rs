@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1LoadBalancerIngress {
   /// Hostname is set for load-balancer ingress points that are DNS based (typically AWS load-balancers)
   #[serde(rename = "hostname")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ObjectFieldSelector {
   /// Version of the schema the FieldPath is written in terms of, defaults to \"v1\".
   #[serde(rename = "apiVersion")]

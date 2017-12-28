@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1PodAffinityTerm {
   /// A label query over a set of resources, in this case pods.
   #[serde(rename = "labelSelector")]

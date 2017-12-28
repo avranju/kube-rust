@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1FlockerVolumeSource {
   /// Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated
   #[serde(rename = "datasetName")]

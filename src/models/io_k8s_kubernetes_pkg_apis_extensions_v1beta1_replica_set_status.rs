@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ExtensionsV1beta1ReplicaSetStatus {
   /// The number of available replicas (ready for at least minReadySeconds) for this replica set.
   #[serde(rename = "availableReplicas")]

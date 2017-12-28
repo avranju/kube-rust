@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct MetaV1StatusDetails {
   /// The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.
   #[serde(rename = "causes")]

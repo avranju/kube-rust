@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1beta1ApiServiceSpec {
   /// CABundle is a PEM encoded CA bundle which will be used to validate an API server's serving certificate.
   #[serde(rename = "caBundle")]

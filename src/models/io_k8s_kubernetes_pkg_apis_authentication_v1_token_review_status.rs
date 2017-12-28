@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AuthenticationV1TokenReviewStatus {
   /// Authenticated indicates that the token was associated with a known user.
   #[serde(rename = "authenticated")]

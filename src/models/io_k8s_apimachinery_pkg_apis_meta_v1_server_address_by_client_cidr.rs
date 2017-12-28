@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct MetaV1ServerAddressByClientCidr {
   /// The CIDR with which clients can match their IP to figure out the server address that they should use.
   #[serde(rename = "clientCIDR")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct PolicyV1beta1PodDisruptionBudgetStatus {
   /// current number of healthy pods
   #[serde(rename = "currentHealthy")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AppsV1beta1StatefulSetUpdateStrategy {
   /// RollingUpdate is used to communicate parameters when Type is RollingUpdateStatefulSetStrategyType.
   #[serde(rename = "rollingUpdate")]

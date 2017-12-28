@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AutoscalingV2alpha1HorizontalPodAutoscalerStatus {
   /// conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
   #[serde(rename = "conditions")]

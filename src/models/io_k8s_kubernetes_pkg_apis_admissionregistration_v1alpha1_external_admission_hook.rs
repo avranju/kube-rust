@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AdmissionregistrationV1alpha1ExternalAdmissionHook {
   /// ClientConfig defines how to communicate with the hook. Required
   #[serde(rename = "clientConfig")]

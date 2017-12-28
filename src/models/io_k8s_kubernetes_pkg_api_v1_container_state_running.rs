@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1ContainerStateRunning {
   /// Time at which the container was last (re-)started
   #[serde(rename = "startedAt")]

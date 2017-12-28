@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AutoscalingV2alpha1MetricStatus {
   /// object refers to a metric describing a single kubernetes object (for example, hits-per-second on an Ingress object).
   #[serde(rename = "object")]

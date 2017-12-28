@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1NodeSpec {
   /// External ID of the node assigned by some machine database (e.g. a cloud provider). Deprecated.
   #[serde(rename = "externalID")]

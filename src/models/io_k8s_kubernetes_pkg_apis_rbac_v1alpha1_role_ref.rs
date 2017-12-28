@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct RbacV1alpha1RoleRef {
   /// APIGroup is the group for the resource being referenced
   #[serde(rename = "apiGroup")]

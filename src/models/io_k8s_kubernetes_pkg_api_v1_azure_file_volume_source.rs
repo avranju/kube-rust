@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1AzureFileVolumeSource {
   /// Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
   #[serde(rename = "readOnly")]

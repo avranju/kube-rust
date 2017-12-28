@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct CertificatesV1beta1CertificateSigningRequestSpec {
   /// Extra information about the requesting user. See user.Info interface for details.
   #[serde(rename = "extra")]

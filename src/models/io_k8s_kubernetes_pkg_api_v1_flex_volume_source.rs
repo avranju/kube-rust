@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1FlexVolumeSource {
   /// Driver is the name of the driver to use for this volume.
   #[serde(rename = "driver")]

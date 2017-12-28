@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AutoscalingV2alpha1ObjectMetricStatus {
   /// currentValue is the current value of the metric (as a quantity).
   #[serde(rename = "currentValue")]

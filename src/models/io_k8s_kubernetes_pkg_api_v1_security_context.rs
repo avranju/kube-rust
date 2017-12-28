@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1SecurityContext {
   /// The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime.
   #[serde(rename = "capabilities")]

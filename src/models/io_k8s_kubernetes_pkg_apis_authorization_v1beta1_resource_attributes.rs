@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AuthorizationV1beta1ResourceAttributes {
   /// Group is the API Group of the Resource.  \"*\" means all.
   #[serde(rename = "group")]

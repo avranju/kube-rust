@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ExtensionsV1beta1RunAsUserStrategyOptions {
   /// Ranges are the allowed ranges of uids that may be used.
   #[serde(rename = "ranges")]

@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct V1SecretKeySelector {
   /// The key of the secret to select from.  Must be a valid secret key.
   #[serde(rename = "key")]

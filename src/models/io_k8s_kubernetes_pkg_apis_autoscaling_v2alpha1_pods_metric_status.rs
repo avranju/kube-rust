@@ -13,7 +13,7 @@
 #[allow(unused_imports)]
 use serde_json::Value;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AutoscalingV2alpha1PodsMetricStatus {
   /// currentAverageValue is the current value of the average of the metric across all relevant pods (as a quantity)
   #[serde(rename = "currentAverageValue")]
