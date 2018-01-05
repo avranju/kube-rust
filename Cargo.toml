@@ -1,7 +1,15 @@
 [package]
 name = "kube_rust"
 version = "1.0.0"
-authors = ["Swagger Codegen team and contributors"]
+description = "OpenAPI generated Rust library for Kubernetes"
+readme = "README.md"
+repository = "https://github.com/avranju/kube-rust"
+license = "MIT"
+authors = ["Rajasekharan Vengalil <avranju@gmail.com>"]
+
+[lib]
+name = "kube_rust"
+path = "src/lib.rs"
 
 [dependencies]
 serde = "1.0"
